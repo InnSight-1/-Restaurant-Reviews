@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RistoranteAPI</name>
+    </assembly>
+    <members>
+        <member name="T:RistoranteAPI.Controllers.AdminController">
+            <summary>
+            Holds Admin tools
+            </summary>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.AdminController.#ctor(Logic.ILogic)">
+            <summary>
+            Holds Admin tools
+            </summary>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.AdminController.SeeAllUsers">
+            <summary>
+            See all registered users
+            </summary>
+            <returns>List of UserAccount objects</returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.AdminController.SearchUser(System.String)">
+            <summary>
+            Pass a string. All user accounts containing it will be displayed
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.AdminController.AddRestaurant(System.String,System.String)">
+            <summary>
+            No restaurant with the same name allowed
+            </summary>
+            <param name="restaurantName"></param>
+            <param name="cuisine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.AdminController.RemoveRestaurant(System.String)">
+            <summary>
+            Restaurant name must be matched exactly. It's reviews will be removed as well
+            </summary>
+            <param name="restauranrName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.AdminController.RemoveUser(System.String)">
+            <summary>
+            Delete UserAccount. Reviews by that user are intact
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+            <remarks>UserName must be matched exactly</remarks>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.AdminController.RemoveReview(System.String,System.String)">
+            <summary>
+            Restaurant and user names must be matched exactly
+            </summary>
+            <param name="restaurantName"></param>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.LoginController.Authenticate(System.String,System.String)">
+            <summary>
+            Gives token authentication to registered user. Token is good for 5 minutes
+            </summary>
+            <param name="UserName"></param>
+            <param name="password"></param>
+            <returns></returns>
+            <remarks>Copy the token. Press authorize. Using keyboard type: Bearer /paste token/</remarks>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.LoginController.AddUser(System.String,System.String)">
+            <summary>
+            Registers new user
+            </summary>
+            <param name="newUserName"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurants">
+            <summary>
+            Standard method. No cache. Logs time of execution in log file
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync">
+            <summary>
+            Asynchronous method to get list of all restaurants. Cashes the result for 1 minute.
+            Logs time of execution in log file
+            </summary>
+            <returns>List of all restaurants</returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.SearchRestaurant(System.String)">
+            <summary>
+            Simple search using "contains"
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.SearchRestaurantAsync(System.String)">
+            <summary>
+            Asynchronous method to search restaurant by name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.SearchRestaurantType(System.String)">
+            <summary>
+            Simple search using "contains"
+            </summary>
+            <param name="cuisine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.SeeAllReviews(System.String)">
+            <summary>
+            Shows all reviews with restaurant names that contain given string
+            </summary>
+            <param name="restaurantName"></param>
+            <returns></returns>
+            <remarks>Pass a string</remarks>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.AddReview(System.String,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            Adds review to the restaurant, chosen by passing it's exact name. User must be authorized first
+            </summary>
+            <param name="restaurantName"></param>
+            <param name="taste"></param>
+            <param name="mood"></param>
+            <param name="service"></param>
+            <param name="price"></param>
+            <param name="note"></param>
+            <returns></returns>
+            <remarks>Username is taken from ClaimsPrincipal</remarks>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.RemoveReview(System.String)">
+            <summary>
+            Remove review that you left. You can only have 1 review per restaurant. Restaurant name must be matched exactly
+            </summary>
+            <param name="restaurantName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Controllers.RistoranteController.ChangeReview(System.String,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            Edit your review after you have submitted it. Restaurant name must be matched exactly
+            </summary>
+            <param name="restaurantName"></param>
+            <param name="taste"></param>
+            <param name="mood"></param>
+            <param name="service"></param>
+            <param name="price"></param>
+            <param name="note"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RistoranteAPI.Repository.JWTManagerRepository.Authenticate(Accounts.UserAccount)">
+            <summary>
+            ClaimTypes will hold authenticated username and role (for admin purposes only)
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

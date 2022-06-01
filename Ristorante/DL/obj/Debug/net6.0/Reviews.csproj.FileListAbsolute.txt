@@ -1,0 +1,12 @@
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\bin\Debug\net6.0\Reviews.deps.json
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\bin\Debug\net6.0\Reviews.dll
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\bin\Debug\net6.0\Reviews.pdb
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\Reviews.csproj.AssemblyReference.cache
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\Reviews.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\Reviews.AssemblyInfoInputs.cache
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\Reviews.AssemblyInfo.cs
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\Reviews.csproj.CoreCompileInputs.cache
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\Reviews.dll
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\refint\Reviews.dll
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\Reviews.pdb
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P0\Ristorante\Reviews\obj\Debug\net6.0\ref\Reviews.dll

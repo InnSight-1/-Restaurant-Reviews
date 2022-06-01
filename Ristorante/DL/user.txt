@@ -1,0 +1,1075 @@
+2022-05-11 23:30:40.168 -04:00 [ERR] SqlException catched in ADD REVIEW method: Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'Ristorante.dbo.Reviews', column 'Note'. Truncated value: 'In the preceding code, Reflection is used to build an XML file name matching that of the web API pro'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.AddReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 82
+   at Logic.Operations.AddReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 151
+   at RistoranteAPI.Controllers.RistoranteController.AddReview(String restaurantName, Double taste, Double mood, Double service, Double price, String note) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 103
+ClientConnectionId:2a149c37-c471-4c16-9ebd-3f2e9913cda2
+Error Number:2628,State:1,Class:16
+2022-05-12 11:14:03.478 -04:00 [ERR] SqlException in ADD RESTAURANT method catched: System.ArgumentException: No ' (apostrophe) character allowed in Restaurant name. Use ` (tilda) instead 
+   at Logic.Operations.AddRestaurant(Restaurant newRestaurant)
+   at RistoranteAPI.Controllers.AdminController.AddRestaurant(String restaurantName, String cuisine)
+2022-05-12 11:16:23.233 -04:00 [ERR] SqlException in ADD RESTAURANT method catched: System.ArgumentException: No ' (apostrophe) character allowed in Restaurant name. Use ` (tilda) instead 
+   at Logic.Operations.AddRestaurant(Restaurant newRestaurant) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 158
+   at RistoranteAPI.Controllers.AdminController.AddRestaurant(String restaurantName, String cuisine) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\AdminController.cs:line 56
+2022-05-12 11:18:47.099 -04:00 [ERR] SqlException in ADD RESTAURANT method catched: System.ArgumentException: No ' (apostrophe) character allowed in Restaurant name. Use ` (tilda) instead 
+   at Logic.Operations.AddRestaurant(Restaurant newRestaurant) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 158
+   at RistoranteAPI.Controllers.AdminController.AddRestaurant(String restaurantName, String cuisine) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\AdminController.cs:line 56
+2022-05-13 15:10:30.397 -04:00 [INF] Restaurant list was cached
+2022-05-13 15:15:19.904 -04:00 [INF] Token for vas was created
+2022-05-13 17:11:26.010 -04:00 [INF] Restaurant list was cached
+2022-05-13 17:30:44.635 -04:00 [INF] Token for user "Pushpinder" was created
+2022-05-13 17:37:34.667 -04:00 [ERR] SqlException catched in ADD REVIEW method: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_RR". The conflict occurred in database "Ristorante", table "dbo.Restaurants", column 'RestaurantName'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.AddReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 82
+   at Logic.Operations.AddReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 182
+   at RistoranteAPI.Controllers.RistoranteController.AddReview(String restaurantName, Double taste, Double mood, Double service, Double price, String note) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 115
+ClientConnectionId:a5fd4935-2024-401d-95dc-346ed9da642e
+Error Number:547,State:0,Class:16
+2022-05-13 19:06:51.642 -04:00 [INF] Token for user "admin" was created
+2022-05-13 19:19:59.955 -04:00 [INF] Token for user "vas" was created
+2022-05-14 13:15:52.100 -04:00 [INF] Restaurant list was cached
+2022-05-14 13:18:07.547 -04:00 [INF] Restaurant list was cached
+2022-05-14 13:24:07.727 -04:00 [INF] Token for user "shaera" was created
+2022-05-14 13:24:50.126 -04:00 [INF] underwoter was typed to search a restaurant by cuisine
+2022-05-14 13:25:59.345 -04:00 [INF] underwater was typed to search a restaurant by cuisine
+2022-05-14 13:28:24.948 -04:00 [ERR] ArgumentOutOfRangeException catched in ADD REVIEW method
+2022-05-14 13:28:46.602 -04:00 [ERR] ArgumentOutOfRangeException catched in ADD REVIEW method
+2022-05-14 13:28:53.302 -04:00 [ERR] SqlException catched in ADD REVIEW method: Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'RV_Id'. Cannot insert duplicate key in object 'dbo.Reviews'. The duplicate key value is (shaera, McDuck).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.AddReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 82
+   at Logic.Operations.AddReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 195
+   at RistoranteAPI.Controllers.RistoranteController.AddReview(String restaurantName, Double taste, Double mood, Double service, Double price, String note) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 134
+ClientConnectionId:aa52603a-34cb-409c-81d0-96811c31c114
+Error Number:2627,State:1,Class:14
+2022-05-14 15:43:51.533 -04:00 [INF] It took 725ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 15:43:55.698 -04:00 [INF] Restaurant list was cached
+2022-05-14 15:43:56.135 -04:00 [INF] It took 437ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 15:44:00.144 -04:00 [INF] It took 0ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 15:59:37.747 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 15:59:38.535 -04:00 [INF] It took 802ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 16:09:53.946 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 16:11:03.707 -04:00 [INF] Restaurant list was cached
+2022-05-14 16:11:03.708 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 16:11:33.700 -04:00 [ERR] SqlException catched in ADD REVIEW method: Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - Этот хост неизвестен.)
+ ---> System.ComponentModel.Win32Exception (11001): Этот хост неизвестен.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at RateAppDL.SqlRepository.GetAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 131
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 40
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2022-05-14 16:11:33.700 -04:00 [INF] It took 29993ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 16:40:38.173 -04:00 [INF] Restaurant list was cached
+2022-05-14 16:40:38.196 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 16:41:08.240 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - Этот хост неизвестен.)
+ ---> System.ComponentModel.Win32Exception (11001): Этот хост неизвестен.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at RateAppDL.SqlRepository.GetAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 131
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 40
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2022-05-14 16:43:01.610 -04:00 [INF] Restaurant list was cached
+2022-05-14 16:43:01.610 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 16:43:31.549 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - Этот хост неизвестен.)
+ ---> System.ComponentModel.Win32Exception (11001): Этот хост неизвестен.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at RateAppDL.SqlRepository.GetAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 131
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 40
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2022-05-14 18:02:21.075 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:02:21.448 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.470 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.489 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.509 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.528 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.548 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.569 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.589 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.613 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.633 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.654 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:21.673 -04:00 [INF] It took 613ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 18:02:26.076 -04:00 [INF] Restaurant list was cached
+2022-05-14 18:02:26.077 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:02:26.097 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.118 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.139 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.159 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.178 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.213 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.233 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.252 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.273 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.293 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.313 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:02:26.334 -04:00 [INF] It took 258ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 18:03:42.453 -04:00 [INF] Restaurant list was cached
+2022-05-14 18:03:42.471 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:03:42.806 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.828 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.846 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.864 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.882 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.901 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.918 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.937 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.954 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.972 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:42.991 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:43.008 -04:00 [INF] It took 556ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 18:03:46.929 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:03:46.946 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:46.964 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:46.982 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.000 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.018 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.036 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.054 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.073 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.093 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.110 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.128 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:03:47.146 -04:00 [INF] It took 217ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 18:08:14.051 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:08:14.383 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'BBQ'" was used
+2022-05-14 18:08:14.404 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 18:08:14.423 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 18:08:14.445 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 18:08:14.474 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 18:08:14.493 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 18:08:14.512 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'McDuck'" was used
+2022-05-14 18:08:14.531 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Oil & Butter'" was used
+2022-05-14 18:08:14.551 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Peachy Maid Cafe'" was used
+2022-05-14 18:08:14.568 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 18:08:14.589 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 18:08:14.626 -04:00 [INF] It took 589ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 18:08:20.974 -04:00 [INF] Restaurant list was cached
+2022-05-14 18:08:20.975 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:08:20.995 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'BBQ'" was used
+2022-05-14 18:08:21.015 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 18:08:21.041 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 18:08:21.062 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 18:08:21.081 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 18:08:21.101 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 18:08:21.120 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'McDuck'" was used
+2022-05-14 18:08:21.139 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Oil & Butter'" was used
+2022-05-14 18:08:21.159 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Peachy Maid Cafe'" was used
+2022-05-14 18:08:21.179 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 18:08:21.220 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 18:08:21.239 -04:00 [INF] It took 265ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 18:20:22.729 -04:00 [INF] Restaurant list was cached
+2022-05-14 18:20:22.747 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:20:23.097 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'BBQ'" was used
+2022-05-14 18:20:23.118 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 18:20:23.137 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 18:20:23.155 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 18:20:23.173 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 18:20:23.191 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 18:20:23.209 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'McDuck'" was used
+2022-05-14 18:20:23.227 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Oil & Butter'" was used
+2022-05-14 18:20:23.245 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Peachy Maid Cafe'" was used
+2022-05-14 18:20:23.263 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 18:20:23.281 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 18:20:23.299 -04:00 [INF] It took 570ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 18:20:24.642 -04:00 [INF] It took 0ms to read from DB, because it was saved in memory cache
+2022-05-14 18:20:25.183 -04:00 [INF] It took 0ms to read from DB, because it was saved in memory cache
+2022-05-14 18:20:28.150 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:20:28.170 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'BBQ'" was used
+2022-05-14 18:20:28.189 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 18:20:28.207 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 18:20:28.225 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 18:20:28.243 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 18:20:28.261 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 18:20:28.279 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'McDuck'" was used
+2022-05-14 18:20:28.297 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Oil & Butter'" was used
+2022-05-14 18:20:28.317 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Peachy Maid Cafe'" was used
+2022-05-14 18:20:28.335 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 18:20:28.353 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 18:20:28.374 -04:00 [INF] It took 224ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 18:22:18.591 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:22:18.895 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 18:22:18.914 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 18:22:18.931 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 18:22:18.951 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Peachy Maid Cafe'" was used
+2022-05-14 18:22:18.968 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 18:22:18.984 -04:00 [INF] h was typed to search a restaurant by name
+2022-05-14 18:22:31.060 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:22:31.077 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 18:22:31.094 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 18:22:31.110 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Peachy Maid Cafe'" was used
+2022-05-14 18:22:31.128 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 18:22:31.144 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 18:22:31.160 -04:00 [INF] u was typed to search a restaurant by cuisine
+2022-05-14 18:22:39.619 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:22:49.797 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:23:14.850 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:23:14.868 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 18:23:14.886 -04:00 [INF] br was typed to search a restaurant by name
+2022-05-14 18:24:21.468 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:25:48.597 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:26:26.189 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:26:38.791 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:27:17.851 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:28:47.691 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 18:32:56.162 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 18:32:56.465 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'BBQ'" was used
+2022-05-14 18:32:56.484 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 18:32:56.500 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 18:32:56.516 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 18:32:56.533 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 18:32:56.549 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 18:32:56.565 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'McDuck'" was used
+2022-05-14 18:32:56.580 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Oil & Butter'" was used
+2022-05-14 18:32:56.597 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Peachy Maid Cafe'" was used
+2022-05-14 18:32:56.612 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 18:32:56.628 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 18:32:56.645 -04:00 [INF] It took 496ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 21:21:17.400 -04:00 [INF] Token for user "admin" was created
+2022-05-14 21:21:35.242 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:21:44.690 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:22:08.336 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:25:16.759 -04:00 [INF] SQL command "INSERT INTO Reviews (StarsTaste, StarsMood, StarsService, StarsPrice, Note, UserName, RestaurantName) VALUES (@StarsTaste, @StarsMood, @StarsService, @StarsPrice, @Note, @UserName, @RestaurantName);" was used
+2022-05-14 21:25:31.899 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:25:40.085 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:52:07.767 -04:00 [INF] Token for user "admin" was created
+2022-05-14 21:52:44.338 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 21:53:10.304 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:53:10.326 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 21:53:10.346 -04:00 [INF] hell was typed to search a restaurant by name
+2022-05-14 21:53:20.437 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 21:53:38.489 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:53:38.509 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 21:53:38.528 -04:00 [INF] hell was typed to search a restaurant by name
+2022-05-14 21:54:32.195 -04:00 [INF] Token for user "petunya" was created
+2022-05-14 21:55:06.291 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 21:55:27.718 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 21:58:03.500 -04:00 [INF] Token for user "petunya" was created
+2022-05-14 21:58:20.832 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 21:58:37.632 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 21:58:56.424 -04:00 [INF] Restaurant list was cached
+2022-05-14 21:58:56.424 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 21:58:56.445 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'BBQ'" was used
+2022-05-14 21:58:56.462 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 21:58:56.480 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 21:58:56.498 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 21:58:56.516 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 21:58:56.534 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 21:58:56.553 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'McDuck'" was used
+2022-05-14 21:58:56.575 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Oil & Butter'" was used
+2022-05-14 21:58:56.594 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 21:58:56.612 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 21:58:56.630 -04:00 [INF] It took 206ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-14 22:24:50.795 -04:00 [INF] Token for user "Ana" was created
+2022-05-14 22:25:08.359 -04:00 [ERR] ArgumentOutOfRangeException catched in CHANGE REVIEW method
+2022-05-14 22:25:16.945 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName);" was used
+2022-05-14 22:25:16.994 -04:00 [ERR] SqlException catched in CHANGE REVIEW method: Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ')'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 112
+   at Logic.Operations.ChangeReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 225
+   at RistoranteAPI.Controllers.RistoranteController.ChangeReview(String restaurantName, Double taste, Double mood, Double service, Double price, String note) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 217
+ClientConnectionId:cf1d9aa8-348f-4f6f-bc12-96d59f549d3c
+Error Number:102,State:1,Class:15
+2022-05-14 22:27:28.530 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName);" was used
+2022-05-14 22:27:28.547 -04:00 [ERR] SqlException catched in CHANGE REVIEW method: Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ')'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 112
+   at Logic.Operations.ChangeReview(Review newReview) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 225
+   at RistoranteAPI.Controllers.RistoranteController.ChangeReview(String restaurantName, Double taste, Double mood, Double service, Double price, String note) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 217
+ClientConnectionId:cf1d9aa8-348f-4f6f-bc12-96d59f549d3c
+Error Number:102,State:1,Class:15
+2022-05-14 22:30:15.091 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName;" was used
+2022-05-14 22:30:46.011 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 22:30:46.059 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'BBQ'" was used
+2022-05-14 22:30:46.082 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Bristol'" was used
+2022-05-14 22:30:46.102 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Chicken House'" was used
+2022-05-14 22:30:46.125 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Crusty Crab'" was used
+2022-05-14 22:30:46.148 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hell`s Kitchen'" was used
+2022-05-14 22:30:46.170 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Hungry Kotish'" was used
+2022-05-14 22:30:46.191 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'McDuck'" was used
+2022-05-14 22:30:46.214 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Oil & Butter'" was used
+2022-05-14 22:30:46.236 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Smachna Hata'" was used
+2022-05-14 22:30:46.256 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = 'Xata'" was used
+2022-05-14 22:30:46.278 -04:00 [INF] It took 268ms to read from DB, using "SeeAllRestaurants" method
+2022-05-14 22:35:55.635 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 22:36:03.690 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 22:39:50.004 -04:00 [INF] Token for user "admin" was created
+2022-05-14 22:41:37.745 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-14 22:42:05.236 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-14 23:17:19.860 -04:00 [INF] Token for user "va" was created
+2022-05-14 23:17:57.908 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserNameWHERE UserName = @UserName);" was used
+2022-05-14 23:17:58.747 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@newUserNameWHERE".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:1acc7a63-aa91-4157-8920-cc187f6943e6
+Error Number:137,State:2,Class:15
+2022-05-14 23:18:28.431 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserNameWHERE UserName = @UserName);" was used
+2022-05-14 23:18:28.450 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@newUserNameWHERE".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:1acc7a63-aa91-4157-8920-cc187f6943e6
+Error Number:137,State:2,Class:15
+2022-05-14 23:18:36.524 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserNameWHERE UserName = @UserName);" was used
+2022-05-14 23:18:36.543 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@newUserNameWHERE".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:1acc7a63-aa91-4157-8920-cc187f6943e6
+Error Number:137,State:2,Class:15
+2022-05-14 23:18:39.977 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserNameWHERE UserName = @UserName);" was used
+2022-05-14 23:18:39.996 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@newUserNameWHERE".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:1acc7a63-aa91-4157-8920-cc187f6943e6
+Error Number:137,State:2,Class:15
+2022-05-14 23:21:07.409 -04:00 [INF] Token for user "va" was created
+2022-05-14 23:21:40.000 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserNameWHERE UserName = @UserName);" was used
+2022-05-14 23:21:40.047 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@newUserNameWHERE".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:9a5322ff-9727-4eff-af5e-d1cc0f41eced
+Error Number:137,State:2,Class:15
+2022-05-14 23:21:51.226 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserNameWHERE UserName = @UserName);" was used
+2022-05-14 23:21:51.243 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@newUserNameWHERE".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:9a5322ff-9727-4eff-af5e-d1cc0f41eced
+Error Number:137,State:2,Class:15
+2022-05-14 23:21:55.819 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserNameWHERE UserName = @UserName);" was used
+2022-05-14 23:21:55.837 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@newUserNameWHERE".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:9a5322ff-9727-4eff-af5e-d1cc0f41eced
+Error Number:137,State:2,Class:15
+2022-05-14 23:23:09.350 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName WHERE UserName = @UserName);" was used
+2022-05-14 23:23:09.696 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ')'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:499cc409-5edf-4567-afce-4444d16becef
+Error Number:102,State:1,Class:15
+2022-05-14 23:23:14.729 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName WHERE UserName = @UserName);" was used
+2022-05-14 23:23:14.750 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ')'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:499cc409-5edf-4567-afce-4444d16becef
+Error Number:102,State:1,Class:15
+2022-05-14 23:23:20.583 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName WHERE UserName = @UserName);" was used
+2022-05-14 23:23:20.602 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ')'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:499cc409-5edf-4567-afce-4444d16becef
+Error Number:102,State:1,Class:15
+2022-05-14 23:23:24.265 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName WHERE UserName = @UserName);" was used
+2022-05-14 23:23:24.291 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ')'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 214
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 208
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:499cc409-5edf-4567-afce-4444d16becef
+Error Number:102,State:1,Class:15
+2022-05-14 23:24:43.051 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName WHERE UserName = @UserName;" was used
+2022-05-14 23:27:08.437 -04:00 [INF] Token for user "va" was created
+2022-05-14 23:29:01.845 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName WHERE UserName = @UserName;" was used
+2022-05-14 23:47:02.537 -04:00 [INF] Token for user "vasya" was created
+2022-05-14 23:47:34.346 -04:00 [ERR] DuplicateNameException in CHANGE USER method catched: System.Data.DuplicateNameException: Please choose new user name!
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 209
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String newPassword) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+2022-05-14 23:47:56.069 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName, Password = @newPassword WHERE UserName = @UserName;" was used
+2022-05-14 23:47:56.125 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_User'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (Dusya).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 215
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 210
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String newPassword) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 79
+ClientConnectionId:72420335-9730-455b-a919-faaa7c7cbb03
+Error Number:2627,State:1,Class:14
+2022-05-14 23:49:52.582 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName, Password = @newPassword WHERE UserName = @UserName;" was used
+2022-05-14 23:49:52.628 -04:00 [ERR] SqlException in CHANGE USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_User'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (Dusya).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 215
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 210
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String newPassword)
+ClientConnectionId:72420335-9730-455b-a919-faaa7c7cbb03
+Error Number:2627,State:1,Class:14
+2022-05-14 23:50:22.280 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName, Password = @newPassword WHERE UserName = @UserName;" was used
+2022-05-14 23:52:00.080 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName, Password = @newPassword WHERE UserName = @UserName;" was used
+2022-05-14 23:52:40.951 -04:00 [INF] Token for user "vasek" was created
+2022-05-14 23:53:10.449 -04:00 [ERR] DuplicateNameException in CHANGE USER method catched: System.Data.DuplicateNameException: Please choose new user name!
+   at Logic.Operations.ChangeUser(UserAccount newUser, String userId) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 209
+   at RistoranteAPI.Controllers.LoginController.ChangeUser(String newUserName, String newPassword)
+2022-05-14 23:53:29.319 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName, Password = @newPassword WHERE UserName = @UserName;" was used
+2022-05-14 23:53:47.895 -04:00 [INF] SQL command "UPDATE Users SET UserName = @newUserName, Password = @newPassword WHERE UserName = @UserName;" was used
+2022-05-14 23:57:24.163 -04:00 [INF] SQL command "INSERT INTO Reviews (StarsTaste, StarsMood, StarsService, StarsPrice, Note, UserName, RestaurantName) VALUES (@StarsTaste, @StarsMood, @StarsService, @StarsPrice, @Note, @UserName, @RestaurantName);" was used
+2022-05-15 10:51:03.791 -04:00 [INF] Token for user "admin" was created
+2022-05-15 11:32:51.288 -04:00 [INF] Token for user "vas" was created
+2022-05-15 11:34:16.331 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 11:36:37.893 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 11:37:00.809 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 11:39:38.873 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName;" was used
+2022-05-15 11:54:57.456 -04:00 [INF] Token for user "vas" was created
+2022-05-15 11:55:47.400 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 11:55:47.421 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 11:57:38.241 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 11:57:38.260 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 11:57:59.122 -04:00 [INF] Token for user "vas" was created
+2022-05-15 11:58:33.873 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 11:58:33.892 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 11:59:22.944 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 11:59:22.962 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 11:59:53.471 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 11:59:53.523 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:00:49.806 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:01:02.462 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:02:30.307 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:02:30.629 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:02:35.493 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:02:35.518 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:02:38.559 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:02:38.578 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:03:55.559 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:03:55.583 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:04:01.864 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:04:01.884 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:04:10.887 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:04:10.908 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:04:11.927 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:04:11.947 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:05:12.467 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:05:50.627 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:06:12.752 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:10:17.946 -04:00 [INF] Token for user "vas" was created
+2022-05-15 12:10:34.184 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:10:34.206 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 12:10:45.269 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 12:10:45.288 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName;" was used
+2022-05-15 13:48:48.452 -04:00 [INF] SQL command "INSERT INTO Users (UserName, Password)VALUES (@UserName, @Password);" was used
+2022-05-15 13:48:48.513 -04:00 [ERR] SqlException in ADD USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@UserName nvarchar(4000),@Password nvarchar(4000))INSERT INTO U' expects the parameter '@UserName', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 194
+   at Logic.Operations.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 202
+   at RistoranteAPI.Controllers.LoginController.AddUser(UserAccount user) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 57
+ClientConnectionId:d2ef90fc-9e0c-425d-9746-19458c7d9d2c
+Error Number:8178,State:1,Class:16
+2022-05-15 13:50:11.766 -04:00 [INF] SQL command "INSERT INTO Users (UserName, Password)VALUES (@UserName, @Password);" was used
+2022-05-15 13:50:11.812 -04:00 [ERR] SqlException in ADD USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@UserName nvarchar(4000),@Password nvarchar(4000))INSERT INTO U' expects the parameter '@UserName', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 194
+   at Logic.Operations.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 202
+   at RistoranteAPI.Controllers.LoginController.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 58
+ClientConnectionId:e3c60803-e7f1-4a2f-b475-1e4eecac41ea
+Error Number:8178,State:1,Class:16
+2022-05-15 13:58:19.753 -04:00 [INF] Token for user "admin" was created
+2022-05-15 14:11:09.847 -04:00 [INF] Token for user "BurgerKing" was created
+2022-05-15 14:12:40.023 -04:00 [INF] SQL command "INSERT INTO Reviews (StarsTaste, StarsMood, StarsService, StarsPrice, Note, UserName, RestaurantName) VALUES (@StarsTaste, @StarsMood, @StarsService, @StarsPrice, @Note, @UserName, @RestaurantName);" was used
+2022-05-15 14:23:01.016 -04:00 [INF] Token for user "admin" was created
+2022-05-15 14:36:55.902 -04:00 [INF] Token for user "admin" was created
+2022-05-15 15:13:42.417 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:13:42.803 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:14:15.883 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:14:16.227 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:15:22.387 -04:00 [INF] Restaurant list was cached
+2022-05-15 15:15:22.388 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:15:22.410 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:15:22.433 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@RrestaurantName".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at RateAppDL.SqlRepository.GetAllReviews(String restaurantName) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 50
+   at Logic.Operations.OverallRating(Restaurant toBeRated) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 265
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 46
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 59
+ClientConnectionId:187b049f-414f-4fb1-a712-cd5bde344736
+Error Number:137,State:2,Class:15
+2022-05-15 15:15:27.086 -04:00 [INF] Restaurant list was cached
+2022-05-15 15:15:27.086 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:15:27.108 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:15:27.131 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@RrestaurantName".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at RateAppDL.SqlRepository.GetAllReviews(String restaurantName) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 50
+   at Logic.Operations.OverallRating(Restaurant toBeRated) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 265
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 46
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 59
+ClientConnectionId:187b049f-414f-4fb1-a712-cd5bde344736
+Error Number:137,State:2,Class:15
+2022-05-15 15:15:43.321 -04:00 [INF] Restaurant list was cached
+2022-05-15 15:15:43.338 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:15:43.677 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:15:43.726 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@RrestaurantName".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at RateAppDL.SqlRepository.GetAllReviews(String restaurantName) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 50
+   at Logic.Operations.OverallRating(Restaurant toBeRated) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 265
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 46
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 59
+ClientConnectionId:8435ed2c-a226-4d52-acea-2e0901e81004
+Error Number:137,State:2,Class:15
+2022-05-15 15:16:09.739 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:16:09.761 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:17:20.678 -04:00 [INF] Restaurant list was cached
+2022-05-15 15:17:20.696 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:17:21.017 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:17:21.066 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@RrestaurantName".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at RateAppDL.SqlRepository.GetAllReviews(String restaurantName) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 50
+   at Logic.Operations.OverallRating(Restaurant toBeRated) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 265
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 46
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 59
+ClientConnectionId:1d2b1725-acb1-4211-a6c4-642e4e96e496
+Error Number:137,State:2,Class:15
+2022-05-15 15:18:11.472 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:18:11.795 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:18:16.103 -04:00 [INF] Restaurant list was cached
+2022-05-15 15:18:16.104 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:18:16.122 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:18:16.139 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@RrestaurantName".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at RateAppDL.SqlRepository.GetAllReviews(String restaurantName) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 50
+   at Logic.Operations.OverallRating(Restaurant toBeRated) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 265
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 46
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 59
+ClientConnectionId:7c1b2045-bb9c-441b-808e-974b7d3aa533
+Error Number:137,State:2,Class:15
+2022-05-15 15:18:59.152 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:18:59.472 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:20:03.520 -04:00 [INF] Token for user "admin" was created
+2022-05-15 15:20:35.789 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:20:35.808 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:20:50.528 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:20:50.544 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:21:02.820 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:21:02.840 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:21:14.685 -04:00 [INF] Restaurant list was cached
+2022-05-15 15:21:14.686 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:21:14.704 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:21:14.720 -04:00 [ERR] SqlException catched in SeeAllRestaurantsAsync method: Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@RrestaurantName".
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at RateAppDL.SqlRepository.GetAllReviews(String restaurantName) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 50
+   at Logic.Operations.OverallRating(Restaurant toBeRated) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 265
+   at Logic.Operations.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 46
+   at RistoranteAPI.Controllers.RistoranteController.SeeAllRestaurantsAsync() in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\Ristorante.cs:line 59
+ClientConnectionId:e28df553-a23e-48e0-aedd-7fdd1104ed2e
+Error Number:137,State:2,Class:15
+2022-05-15 15:22:10.321 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:22:10.646 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:24:11.533 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:24:41.829 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:25:35.503 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:25:35.888 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:31:21.903 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 15:31:30.105 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:31:30.125 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:33:15.435 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:33:15.785 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:34:05.992 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:34:10.589 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:36:43.244 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:37:00.831 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:41:23.198 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:42:04.675 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:46:49.247 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 15:48:10.730 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 15:49:10.527 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:49:10.860 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:50:02.481 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:51:13.943 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:53:23.247 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 15:53:33.402 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:53:33.424 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 15:56:44.813 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 15:56:45.147 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 16:00:34.886 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:01:14.659 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RrestaurantName;" was used
+2022-05-15 16:02:42.238 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:02:42.559 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @rrestaurantName;" was used
+2022-05-15 16:02:55.327 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:02:55.627 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.661 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.681 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.701 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.721 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.740 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.757 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.777 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.797 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:02:55.816 -04:00 [INF] It took 502ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:03:44.510 -04:00 [INF] Restaurant list was cached
+2022-05-15 16:03:44.511 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:03:44.531 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.549 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.567 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.585 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.603 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.623 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.641 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.659 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.677 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @restaurantName;" was used
+2022-05-15 16:03:44.695 -04:00 [INF] It took 185ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-15 16:05:27.330 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:05:27.679 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.714 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.734 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.754 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.774 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.794 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.813 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.832 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.852 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:05:27.871 -04:00 [INF] It took 554ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:10:18.152 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:10:18.510 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.544 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.564 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.584 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.604 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.624 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.644 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.665 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.684 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:10:18.704 -04:00 [INF] It took 566ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:14:21.573 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:14:21.912 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:21.944 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:21.962 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:21.979 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:21.999 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:22.016 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:22.034 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:22.052 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:22.070 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:22.088 -04:00 [INF] It took 531ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:14:36.621 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:14:36.637 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.656 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.673 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.695 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.713 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.731 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.753 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.772 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.789 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:14:36.807 -04:00 [INF] It took 186ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:45:24.968 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:45:25.300 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.332 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.350 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.368 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.387 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.405 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.422 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.441 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.461 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:45:25.483 -04:00 [INF] It took 529ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:50:09.826 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:50:10.141 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.172 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.191 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.209 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.227 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.246 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.264 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.281 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.299 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:10.317 -04:00 [INF] It took 504ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:50:43.419 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:50:43.437 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.454 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.473 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.491 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.520 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.539 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.556 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.575 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.594 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:50:43.610 -04:00 [INF] It took 190ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 16:55:00.153 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 16:55:00.592 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.626 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.644 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.662 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.681 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.700 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.718 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.736 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.754 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 16:55:00.771 -04:00 [INF] It took 644ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 19:55:30.951 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-15 19:55:31.321 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.357 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.377 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.396 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.418 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.438 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.459 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.480 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.502 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-15 19:55:31.522 -04:00 [INF] It took 586ms to read from DB, using "SeeAllRestaurants" method
+2022-05-15 20:44:34.187 -04:00 [INF] SQL command "INSERT INTO Users (UserName, Password)VALUES (@UserName, @Password);" was used
+2022-05-15 20:44:34.274 -04:00 [ERR] SqlException in ADD USER method catched: Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_User'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (admin).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RateAppDL.SqlRepository.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\DL\SqlRepository.cs:line 194
+   at Logic.Operations.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 202
+   at RistoranteAPI.Controllers.LoginController.AddUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 68
+ClientConnectionId:d72440f0-774c-43df-a4ea-f337069aee0c
+Error Number:2627,State:1,Class:14
+2022-05-15 20:45:00.932 -04:00 [ERR] SqlException in ADD USER method catched: System.Data.DuplicateNameException: User "admin" is already registered!
+   at Logic.Operations.AddUser(UserAccount newUser) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\BL\Operations.cs:line 204
+   at RistoranteAPI.Controllers.LoginController.AddUser(String newUserName, String password) in D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\RistoranteAPI\Controllers\LoginController.cs:line 68
+2022-05-15 20:45:25.685 -04:00 [INF] Token for user "admin" was created
+2022-05-15 20:45:55.876 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 20:45:55.895 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName;" was used
+2022-05-15 20:47:35.827 -04:00 [ERR] ArgumentOutOfRangeException catched in CHANGE REVIEW method
+2022-05-15 20:48:02.436 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 20:48:34.581 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName;" was used
+2022-05-15 20:51:37.959 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 20:51:38.290 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 20:54:52.228 -04:00 [INF] Token for user "vas" was created
+2022-05-15 20:55:49.811 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 20:55:49.832 -04:00 [ERR] ArgumentException catched in CHANGE REVIEW method
+2022-05-15 20:56:16.774 -04:00 [INF] SQL command "SELECT * FROM Reviews;" was used
+2022-05-15 20:56:16.795 -04:00 [INF] SQL command "UPDATE Reviews SET StarsTaste = @StarsTaste, StarsMood = @StarsMood, StarsService = @StarsService, StarsPrice = @StarsPrice, Note = @Note WHERE UserName = @UserName AND RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.117 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-17 12:18:18.652 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.686 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.706 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.728 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.752 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.772 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.794 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.814 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.831 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:18.852 -04:00 [INF] It took 824ms to read from DB, using "SeeAllRestaurants" method
+2022-05-17 12:18:23.557 -04:00 [INF] Restaurant list was cached
+2022-05-17 12:18:23.558 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-17 12:18:23.579 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.597 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.615 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.635 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.653 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.675 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.694 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.714 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.733 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:18:23.753 -04:00 [INF] It took 196ms to read from DB, using "SeeAllRestaurantsAsync" method
+2022-05-17 12:18:25.566 -04:00 [INF] It took 0ms to read from DB, because it was saved in memory cache
+2022-05-17 12:18:26.871 -04:00 [INF] It took 0ms to read from DB, because it was saved in memory cache
+2022-05-17 12:22:54.523 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-17 12:22:54.545 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.567 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.586 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.606 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.625 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.643 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.664 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.682 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.702 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:22:54.722 -04:00 [INF] It took 198ms to read from DB, using "SeeAllRestaurants" method
+2022-05-17 12:24:59.500 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-17 12:24:59.524 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-17 12:24:59.544 -04:00 [INF] mc was typed to search a restaurant by name
+2022-05-17 12:25:20.050 -04:00 [INF] Token for user "vas" was created
+2022-05-21 21:30:22.093 -04:00 [INF] SQL command "SELECT * FROM Restaurants;" was used
+2022-05-21 21:30:22.642 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.676 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.693 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.710 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.729 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.747 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.765 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.783 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.800 -04:00 [INF] SQL command "SELECT * FROM Reviews WHERE RestaurantName = @RestaurantName;" was used
+2022-05-21 21:30:22.818 -04:00 [INF] It took 832ms to read from DB, using "SeeAllRestaurants" method

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "v4sfiPh+57qROk/2BoVqnUe8De4XOrPwts0uBwZkfNVWl63SnY1unS9ozY87NNjvSEm9IVF/dYJv2PHYqrWRwA==",
+  "success": true,
+  "projectFilePath": "D:\\Learning\\dotnet-Training-220238\\Vladimir-Shnyakin\\P1\\Ristorante\\Accounts\\Accounts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shado\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\shado\\.nuget\\packages\\coverlet.msbuild\\3.1.2\\coverlet.msbuild.3.1.2.nupkg.sha512",
+    "C:\\Users\\shado\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

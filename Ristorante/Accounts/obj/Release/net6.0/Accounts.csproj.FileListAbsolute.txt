@@ -1,0 +1,12 @@
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\bin\Release\net6.0\Accounts.deps.json
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\bin\Release\net6.0\Accounts.dll
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\bin\Release\net6.0\Accounts.pdb
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\Accounts.csproj.AssemblyReference.cache
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\Accounts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\Accounts.AssemblyInfoInputs.cache
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\Accounts.AssemblyInfo.cs
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\Accounts.csproj.CoreCompileInputs.cache
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\Accounts.dll
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\refint\Accounts.dll
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\Accounts.pdb
+D:\Learning\dotnet-Training-220238\Vladimir-Shnyakin\P1\Ristorante\Accounts\obj\Release\net6.0\ref\Accounts.dll
