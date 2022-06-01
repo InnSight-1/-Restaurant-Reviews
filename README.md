@@ -17,15 +17,11 @@ The Restaurant Reviews application allows a user to provide and look up reviews 
 
 ## Features
 
-List of features ready and TODOs for future development
+List of features ready
 
 * Ability for Admin to add Restaurant
 * Ability to Add users to Database
 * Ability for users to add reviews
-
-To-do list:
-
-* Allow user to login as the user
 
 ## Getting Started
 
@@ -37,8 +33,7 @@ To-do list:
 * dotnet run
 
 * All the `code` required to get started
-* Images of what it should look like
 
 ## License
 
-This project uses the following license: <MIT License>.
+This project uses the following license: MIT License.
